@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Home() {
   const [name, setName] = useState("");
@@ -171,10 +172,12 @@ export default function Home() {
           <div className="bg-white rounded-2xl shadow-xl p-8 text-center animate-fade-in">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">🎉 Your Coloring Page is Ready!</h2>
             <div className="mb-6">
-              <img
+              <Image
                 src={resultImage}
                 alt="Generated coloring page"
                 className="max-w-full h-auto rounded-xl shadow-lg mx-auto border-4 border-gray-100"
+                width={512}
+                height={512}
               />
             </div>
             <a
