@@ -68,6 +68,7 @@ export default function Home() {
             Transform your photos into beautiful coloring pages with AI magic
           </p>
           <p className="text-sm text-gray-500 max-w-md mx-auto bg-blue-50 p-3 rounded-lg border border-blue-100">
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
             ⏱️ Please note: It takes 2-3 minutes to generate your coloring page. Don't worry if it seems to take a while!
           </p>
         </div>
